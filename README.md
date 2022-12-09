@@ -32,28 +32,34 @@ Sigue las instrucciones para instalar correctamente tu sistema.
 
 
 1. Instalando dependencias con Composer
-Lo primero que debes hacer luego de descargar un proyecto existente a tu maquina local y después de haber configurado tu virtualhost, es instalar las dependencias del proyecto con Composer.
+
+Lo primero que debes hacer luego de descargar un proyecto existente a tu maquina local y después de haber configurado tu virtualhost, es instalar las dependencias del proyecto con Composer:
 
 "$ composer require crocodicstudio/crudbooster=5.6.*"
 
 
 2.Archivo de configuración de Laravel
+DEBES CREAR UNA NUEVA BASE DE DATOS EN MYSQL CON NOMBRE "plantas" e importar el archivo "bd_plantas.sql" dentro del proyecto
+
+
+3. Configuracion de archivo .env
 Cada nuevo proyecto con Laravel, por defecto tiene un archivo .env con los datos de configuración necesarios para el mismo, cuando utilizamos un sistema de control de versiones como git, este archivo se excluye del repositorio por medidas de seguridad .
 
 DB_DATABASE=**plantas**
 DB_USERNAME=**root**
 DB_PASSWORD=""
 
-3. Corre el siguiente comando en la terminal 
 
+3. Corre el siguiente comando en la terminal 
 "$ php artisan crudbooster:install"
 
 
+
 4. Accede al servidor
-
-$ php artisan serve
-
+"$ php artisan serve"
 y añade en la URL "/admin/login"
+
+
 
 ### Usuarios y contraseñas 
 Para iniciar sesion en el sistema se debe utilizar las siguientes credenciales:
