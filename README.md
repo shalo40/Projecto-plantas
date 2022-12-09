@@ -53,7 +53,8 @@ DB_PASSWORD=""
 3. Corre el siguiente comando en la terminal 
 "$ php artisan crudbooster:install"
 
-
+luego el comando:
+"$ php artisan migrate"
 
 4. Accede al servidor
 "$ php artisan serve"
