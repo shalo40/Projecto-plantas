@@ -34,7 +34,7 @@
 			$this->col[] = ["label"=>"Numero de serie","name"=>"N_Serie_Planta"];
 			$this->col[] = ["label"=>"Nombre Planta","name"=>"Nombre_Planta"];
 			$this->col[] = ["label"=>"Rango de humedad","name"=>"Humedad_Planta","join"=>"humedad,Rango_Humedad"];
-			$this->col[] = ["label"=>"Estado según humedad","name"=>"Estado_Humedad_Planta","join"=>"humedad,id"];
+			$this->col[] = ["label"=>"Estado según humedad","name"=>"Estado_Humedad_Planta","join"=>"humedad,Significado_Humedad"];
 			$this->col[] = ["label"=>"Rango de Temperatura","name"=>"Temperatura_Planta","join"=>"temperatura,Rango_Temperatura"];
 			$this->col[] = ["label"=>"Estado según temperatura","name"=>"Estado_Temperatura_Planta","join"=>"temperatura,Significado_Temperatura"];
 			$this->col[] = ["label"=>"Fecha de Creacion","name"=>"created_at"];
@@ -46,7 +46,9 @@
 			$this->form[] = ['label'=>'Numero de serie','name'=>'N_Serie_Planta','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Nombre de la planta','name'=>'Nombre_Planta','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Humedad','name'=>'Humedad_Planta','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'humedad,Rango_Humedad'];
-			$this->form[] = ['label'=>'Temperatura','name'=>'Temperatura_Planta','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'temperatura,Rango_Temperatura'];
+			$this->form[] = ['label'=>'Estado segun humedad','name'=>'Estado_Humedad_Planta','type'=>'select2','validation'=>'required','width'=>'col-sm-9','datatable'=>'humedad,Significado_Humedad'];
+			$this->form[] = ['label'=>'Temperatura','name'=>'Temperatura_Planta','type'=>'select','validation'=>'required','width'=>'col-sm-10','datatable'=>'temperatura,Rango_Temperatura'];
+			$this->form[] = ['label'=>'Estado segun temperatura','name'=>'Estado_Temperatura_Planta','type'=>'select','validation'=>'required','width'=>'col-sm-9','datatable'=>'temperatura,Significado_Temperatura'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
@@ -55,7 +57,9 @@
 			//$this->form[] = ['label'=>'Numero de serie','name'=>'N_Serie_Planta','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Nombre de la planta','name'=>'Nombre_Planta','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Humedad','name'=>'Humedad_Planta','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'humedad,Rango_Humedad'];
-			//$this->form[] = ['label'=>'Temperatura','name'=>'Temperatura_Planta','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'temperatura,Rango_Temperatura'];
+			//$this->form[] = ['label'=>'Estado segun humedad','name'=>'Estado_Humedad_Planta','type'=>'select2','validation'=>'required','width'=>'col-sm-9','datatable'=>'humedad,Significado_Humedad'];
+			//$this->form[] = ['label'=>'Temperatura','name'=>'Temperatura_Planta','type'=>'select','validation'=>'required','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Estado segun temperatura','name'=>'Estado_Temperatura_Planta','type'=>'select','validation'=>'required','width'=>'col-sm-9','datatable'=>'temperatura,Significado_Temperatura'];
 			# OLD END FORM
 
 			/* 
