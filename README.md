@@ -29,6 +29,7 @@ Sigue las instrucciones para instalar correctamente tu sistema.
 ## Instrucciones de instalacion
 
 0. Clona el repositorio o copia el contenido del archivo en un nuevo proyecto de laravel (utiliza visual studio code).
+Usa el siguiente LINK: "https://github.com/shalo40/Projecto-plantas.git"
 
 
 1. Instalando dependencias con Composer
